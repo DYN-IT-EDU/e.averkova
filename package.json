@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js/hana": "^1",
     "@sap/cds": "^8",
     "express": "^4"
   },
@@ -39,7 +40,15 @@
             "password": "abcd1234"
           }
         }
+      },
+      "[hybrid]": {
+        "db": {
+          "kind": "hana"
+        }
       }
+    },
+    "sql": {
+      "native_hana_associations": false
     }
   }
 }
